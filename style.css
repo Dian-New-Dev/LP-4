@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+body img {
+    width: 50px;
+}
+
+h1, h2 {
+    font-family: "Poppins", sans-serif;
+    transition: color 0.5s ease;
+}
+
+h1 {
+    font-size: 16px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: -50px;
+    margin-bottom: 90px;
+}
+
+header {
+    background-color: #004f6d;
+    width: 100%;
+    
+}
+
+nav {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 100px;
+
+}
+
+.logo img {
+    width: 100px;
+    border-radius: 15px;
+}
+
+
+.menu-hamburguer {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+@media (min-width: 1000px) {
+    .menu-hamburguer {
+        display: none;
+
+    }
+}
+
+.menu-normal {
+    display: none;
+}
+
+@media (min-width: 1000px) {
+    .menu-normal {
+        display: flex;
+        color: white;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 20px;
+        font-weight: 600;
+
+    }
+}
+
+.hamb-lines {
+  width: 30px;
+  border: 1px solid white;
+  margin-bottom: 5px;
+  transform: translateY(0) rotate(0deg);
+  transition: transform 0.5s ease;
+}
+
+.hamb-menu-panel {
+	display: block;
+	position: fixed;
+	top: 50px;
+	right: -400px;
+	background-color: #016d97;
+	color: white;
+	width: 90%;
+	font-size: 32px;
+
+	transition: right 0.5s ease;
+    z-index: 100;
+}
+
+@media (min-width: 445px) {
+    .hamb-menu-panel {
+        right: -800px;
+        width: 50%;
+
+    }
+}
+
+
+
+
+.hamb-menu-panel ul {
+	padding: 0;
+	margin: 0;
+}
+
+.li-wrapper {
+	border-bottom: 1px solid white;
+	padding: 20px;
+}
+
+.li-wrapper li {
+	list-style-type: none;
+}
+
+main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.dobra1-titulo {
+    height: 400px;
+    border: 1px solid rgb(0, 0, 0);
+    position: relative;
+    background-image: url('images/dobra1-A.webp');
+    background-color: hsla(0, 0%, 1%, 0.712);
+    background-blend-mode: saturation;
+    background-position: center;
+    transition: background-image 0.5s ease;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+
+
+}
+
+.arrow-left {
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    font-size: 26px;
+    padding: 5px;
+    width: 45px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.651);
+    color: white;
+    font-weight: 600;
+    transition: transform 0.5s ease;
+}
+
+.arrow-right {
+    position: absolute;
+    top: 40%;
+    right: 20px;
+    font-size: 26px;
+    padding: 5px;
+    width: 45px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.651);
+    color: white;
+    font-weight: 600;
+    transition: transform 0.5s ease;
+
+}
