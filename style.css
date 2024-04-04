@@ -28,7 +28,7 @@ body img {
 
 h1, h2 {
     font-family: "Poppins", sans-serif;
-    transition: color 0.5s ease;
+
 }
 
 h1 {
@@ -42,6 +42,18 @@ h2 {
     font-weight: 300;
     margin-top: -50px;
     margin-bottom: 90px;
+}
+
+.h1A, .h2A {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.h1B, .h2B {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s ease;
 }
 
 header {
