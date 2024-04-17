@@ -7,6 +7,7 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
+    background-color: #fff1e8;
 }
 
 body {
@@ -19,6 +20,8 @@ main {
     margin: 0;
     width: 100%;
 }
+
+
 
 .sticky-whatsapp {
     position: fixed;
@@ -48,6 +51,22 @@ main p {
     line-height: 25px;
 }
 
+@media (min-width: 1025px) {
+    main p {
+        font-size: 18px;
+    }
+}
+
+h3 {
+    font-size: 20px;
+}
+
+@media (min-width: 1025px) {
+    h3 {
+        font-size: 24px;
+    }
+}
+
 main button {
     color: white;
     background-color: rgb(247, 195, 51);
@@ -56,6 +75,21 @@ main button {
     border-radius: 10px;
     margin-bottom: 20px;
     font-weight: 600;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+main button:hover {
+    color: rgb(37, 68, 1);
+
+}
+
+@media (min-width: 1025px) {
+    main button {
+        font-size: 22px;
+        margin: 32px;
+        padding: 20px 25px;
+    }
 }
 
 a {
@@ -64,6 +98,10 @@ a {
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
     font-weight: 600;
+}
+
+a:hover {
+    color: rgb(18, 34, 0);
 }
 
 
@@ -82,11 +120,25 @@ h1 {
     margin-bottom: 0;
 }
 
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 48px;
+        margin: 32px;
+    }
+}
+
 h2 {
     font-size: 14px;
     font-weight: 300;
     margin-top: -50px;
     margin-bottom: 90px;
+}
+
+@media (min-width: 1025px) {
+    h2 {
+        font-size: 28px;
+        margin-bottom: 32px;
+    }
 }
 
 .h1A, .h2A {
@@ -125,6 +177,7 @@ nav {
     display: flex;
     align-items: center;
     width: 100px;
+    margin-right: 100px;
 
 }
 
@@ -223,6 +276,7 @@ nav {
     background-color: hsla(0, 0%, 1%, 0.712);
     background-blend-mode: saturation;
     background-position: center;
+    background-size: auto;
     transition: background-image 0.5s ease;
     color: white;
     display: flex;
@@ -230,8 +284,14 @@ nav {
     justify-content: center;
     align-items: center;
     z-index: 99;
+}
 
-
+@media (min-width: 1025px) {
+    .dobra1-titulo {
+        height: 700px;
+        background-size: cover;
+        background-position: 50% 25%;
+    }
 }
 
 .arrow-left {
@@ -247,6 +307,15 @@ nav {
     color: white;
     font-weight: 600;
     transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+@media (min-width: 1025px) {
+    .arrow-left {
+        top: 49%;
+        padding: 20px 5px;
+
+    }
 }
 
 .arrow-right {
@@ -262,7 +331,15 @@ nav {
     color: white;
     font-weight: 600;
     transition: transform 0.5s ease;
+    cursor: pointer;
 
+}
+
+@media (min-width: 1025px) {
+    .arrow-right {
+        top: 49%;
+        padding: 20px 5px;
+    }
 }
 
 .dobra2-apresentacao {
@@ -270,6 +347,32 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.dobra2-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 1025px) {
+    .dobra2-wrapper {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1025px) {
+    .dobra2-wrapper > :nth-child(1) {
+        flex: 0.5;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1025px) {
+    .dobra2-wrapper > :nth-child(2) {
+        flex: 0.5;
+        text-align: center;
+    }
 }
 
 .dobra2-apresentacao img {
@@ -309,6 +412,14 @@ nav {
 
 }
 
+@media (min-width: 1025px) {
+    .dobra3-paineis {
+        padding: 50px;
+        width: 600px;
+        height: 300px;
+    }
+}
+
 .dobra3-paineis p {
     text-align: center;
 }
@@ -332,6 +443,7 @@ nav {
 
 .FAQ-questions-wrapper {
     padding: 0px 20px;
+
 }
 
 .question-wrapper {
@@ -346,6 +458,7 @@ nav {
 
 .togagble-question {
     width: 90%;
+    cursor: pointer;
 }
 
 
@@ -383,6 +496,13 @@ nav {
     text-align: center;
 }
 
+@media (min-width: 1025px) {
+    .dobra5-CTA {
+        background-size: 100%;
+        background-position: 0% 25%;
+    }
+}
+
 .dobra5-CTA p {
     font-weight: 600;
 }
@@ -395,6 +515,13 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media (min-width: 1025px) {
+    .postagens-wrapper {
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
 .blog-post-panel {
@@ -410,6 +537,21 @@ nav {
     margin-bottom: 10px;
     border-radius: 5px;
 
+}
+
+.blog-post-panel:hover {
+    transform: scale(1.05);
+}
+
+@media (min-width: 1025px) {
+    .blog-post-panel {
+        width: 30%;
+        height: 300px;
+        box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+
+    }
 }
 
 .blog-post-panel p {
@@ -446,6 +588,25 @@ nav {
     background-blend-mode: hue;
     margin-bottom: 20px;
 }
+
+@media (min-width: 1025px) {
+    .postagens-wrapper div:nth-child(3) {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+@media (min-width: 1025px) {
+    .dobra2-apresentacao, .dobra3-nossos-servicos, .dobra4-FAQ,
+    .dobra5-CTA, .dobra6-blog {
+        margin: 50px 300px;    }
+}
+
+
+
+
+
 
 footer {
     background-color: #004f6d;
