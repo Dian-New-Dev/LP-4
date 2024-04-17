@@ -11,6 +11,7 @@ html, body {
 
 body {
     font-family: "Open Sans", sans-serif;
+    position: relative;
 }
 
 main {
@@ -18,6 +19,24 @@ main {
     margin: 0;
     width: 100%;
 }
+
+.sticky-whatsapp {
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+    z-index: 1000;
+    transition: transform 0.5s ease;
+}
+
+.sticky-whatsapp:hover {
+    transform: scale(1.5);
+
+}
+
+.sticky-whatsapp img {
+    width: 25px;
+}
+
 
 main section {
     padding: 0px 20px;
@@ -31,11 +50,12 @@ main p {
 
 main button {
     color: white;
-    background-color: #f7c333;
+    background-color: rgb(247, 195, 51);
     padding: 10px 15px;
     border: 1px solid white;
     border-radius: 10px;
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
 a {
@@ -84,6 +104,11 @@ h2 {
 header {
     background-color: #004f6d;
     width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 500;
+
+
     
 }
 
@@ -93,6 +118,7 @@ nav {
     display: flex;
     align-items: center;
     height: 50px;
+
 }
 
 .logo {
@@ -190,7 +216,7 @@ nav {
 }
 
 .dobra1-titulo {
-    height: 400px;
+    height: 350px;
     border: 1px solid rgb(0, 0, 0);
     position: relative;
     background-image: url('images/dobra1-A.webp');
@@ -210,8 +236,8 @@ nav {
 
 .arrow-left {
     position: absolute;
-    top: 40%;
-    left: 20px;
+    top: 37%;
+    left: 35%;
     font-size: 26px;
     padding: 5px;
     width: 45px;
@@ -225,8 +251,8 @@ nav {
 
 .arrow-right {
     position: absolute;
-    top: 40%;
-    right: 20px;
+    top: 37%;
+    right: 35%;
     font-size: 26px;
     padding: 5px;
     width: 45px;
@@ -314,7 +340,7 @@ nav {
     position: relative;
     border: 1px solid rgba(128, 128, 128, 0.164);
     padding: 5px;
-    marginb-bottom: 0px;
+    margin-bottom: 0px;
     padding-bottom: 0px;
 }
 
@@ -328,8 +354,162 @@ nav {
     width: 10px;
     right: 5px;
     transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
+
+.answer-arrow-up {
+    position: absolute;
+    width: 10px;
+    right: 5px;
+    transform: rotate(270deg);
+    transition: transform 0.3s ease;
 }
 
 .answer {
+    display: none;
+}
+
+.answer-show {
+    display: block;
     margin-left: 30px;
 }
+
+.dobra5-CTA {
+    background-image: url('images/dobra5.webp');
+    background-color: #1a1c20d0;
+    background-blend-mode: hue;
+    padding: 20px 40px;
+    color: white;
+    text-align: center;
+}
+
+.dobra5-CTA p {
+    font-weight: 600;
+}
+
+.dobra6-blog {
+    text-align: center;
+}
+
+.postagens-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-post-panel {
+    background-color: #016c97;
+    color: white;
+    height: 200px;
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+}
+
+.blog-post-panel p {
+    margin: 0;
+    font-weight: 100;
+}
+
+.blog-post-panel h5 {
+    margin: 0;
+    font-size: 18px;
+    text-align: left;
+    border-bottom: 1px solid white;
+
+}
+
+.postagens-wrapper div:nth-child(1) {
+    background-image: url('images/dobra6-A.jpg');
+    background-size: cover;
+    background-color: #1a1c206c;
+    background-blend-mode: hue;
+}
+
+.postagens-wrapper div:nth-child(2) {
+    background-image: url('images/dobra6-B.jpg');
+    background-size: cover;
+    background-color: #1a1c206c;
+    background-blend-mode: hue;
+}
+
+.postagens-wrapper div:nth-child(3) {
+    background-image: url('images/dobra6-C.jpg');
+    background-size: cover;
+    background-color: #1a1c206c;
+    background-blend-mode: hue;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #004f6d;
+    padding: 10px;
+    color: white;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+footer h5 {
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer-dobra1 {
+    text-align: center;
+}
+
+.footer-dobra1 img {
+    width: 70px;
+}
+
+.footer-dobra-wrapper {
+    display: flex;
+}
+
+.footer-dobra-wrapper section {
+    width: 50%;
+
+}
+
+.contato-flexbox  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -10px;
+}
+
+.contato-flexbox img {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+    margin-right: 5px;
+}
+
+.social-media-icons {
+    display: flex;
+    filter: invert(100%);
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.footer-dobra4 p {
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.267);
+    color: rgba(255, 255, 255, 0.425);
+}
+
+
+
+
+
+
